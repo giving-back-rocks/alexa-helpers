@@ -1,5 +1,6 @@
 // we need moment, sync-request, postmark
 
+// carrier = ups | usps
 function shipping(zip, carrier) {
 	const sr = require('sync-request');
 	if (carrier == 'usps' || carrier == 'ups') {
@@ -16,6 +17,7 @@ function shipping(zip, carrier) {
 	}
 }
 
+// type = 0 : volunteer, 1 : ups, 2 : usps
 function sendEmail(type, data) {
 	var postmark = require("postmark");
 	var client = new postmark.Client("e566bce4-7c28-404d-b7c0-94adecba719a");
