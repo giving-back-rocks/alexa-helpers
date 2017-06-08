@@ -24,8 +24,8 @@ function sendEmail(type, data) {
 
 	//temporary hard-coded variables
 	//TODO: replace with dynamic variables
-	var recipientemail = "zyber17@gmail.com";
-	var givingbackemail = "thanks@giving-back.rocks";
+	var recipientemail = "brittenasa@gmail.com";
+	var givingbackemail = "thank.you@giving-back.rocks";
 
 	//Postmark template ID numbers
 	var volunteerID = 2084301;
@@ -92,7 +92,3 @@ function sendEmail(type, data) {
 	}
 
 }
-
-// shipping(10019, 'ups');
-
-sendEmail(0, null);
